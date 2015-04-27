@@ -1,7 +1,7 @@
 # form-field-null-test-bundle
 Test bundle
 
-## Register bundle in app kernel, add routing, update DB schema
+#### Register bundle in app kernel, add routing, update DB schema
 
 ```
 public function registerBundles()
@@ -24,13 +24,13 @@ employee_bundle:
 php app/console d:s:u --force
 ```
 
-## Insert some test data
+#### Insert some test data
 
 ```
 INSERT INTO test__vendor (id, name) VALUES (NULL, 'Vendor 1'), (NULL, 'Vendor 2');
 ```
 
-## Call up the test page in browser
+#### Call up the test page in browser
 
 ```
 http://myproject.local/app_dev.php/employees
