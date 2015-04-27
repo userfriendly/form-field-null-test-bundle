@@ -37,7 +37,7 @@ class Vendor
     }
 
     /**
-     * @return the unknown_type
+     * @return integer
      */
     public function getId()
     {
