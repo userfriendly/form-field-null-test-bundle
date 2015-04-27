@@ -1,0 +1,8 @@
+parameters:
+    cisco.type.employee.class:  CiscoSystems\FormFieldNullTestBundle\Form\EmployeeType
+
+services:
+    cisco.type.employee:
+        class: '%cisco.type.employee.class%'
+        tags:
+          - { name: form.type, alias: employee }
