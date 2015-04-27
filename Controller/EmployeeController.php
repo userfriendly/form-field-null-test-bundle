@@ -12,7 +12,7 @@ class EmployeeController extends Controller
         $em = $this->getDoctrine()->getManager();
         $employees = $em->getRepository( 'CiscoSystemsFormFieldNullTestBundle:Employee' )->findAll();
         $vendors = $em->getRepository( 'CiscoSystemsFormFieldNullTestBundle:Vendor' )->findAll();
-        return $this->render( 'CiscoEmployeeBundle:Employee:index.html.twig', array(
+        return $this->render( 'CiscoSystemsFormFieldNullTestBundle:Employee:index.html.twig', array(
             'employees' => $employees,
             'vendors' => $vendors,
         ));
