@@ -3,6 +3,18 @@
 
 <h2>Vendors</h2>
 
+{% for vendor in vendors %}
+<p>{{ vendor }}</p>
+{% endfor %}
+
 <h2>Employees</h2>
 
+{% for employee in employees %}
+<p>{{ employee }}</p>
+{% endfor %}
+
 <h3>Add an employee</h3>
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}

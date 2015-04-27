@@ -3,8 +3,3 @@ employees:
     pattern:  /
     defaults:
         _controller: CiscoSystemsFormFieldNullTestBundle:Employee:index
-
-save_employee:
-    pattern:  /save
-    defaults:
-        _controller: CiscoSystemsFormFieldNullTestBundle:Employee:save

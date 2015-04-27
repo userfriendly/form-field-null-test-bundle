@@ -20,6 +20,7 @@ class EmployeeType extends AbstractType
                     'required' => false,
                     'empty_data' => null,
                   ));
+    $builder->add( 'save', 'submit' );
   }
 
   public function getName()

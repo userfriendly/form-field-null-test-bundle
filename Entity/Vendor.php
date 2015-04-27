@@ -29,6 +29,14 @@ class Vendor
     protected $employees;
 
     /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->employees = new ArrayCollection();
+    }
+
+    /**
      * @return the unknown_type
      */
     public function getId()
@@ -60,5 +68,15 @@ class Vendor
     public function getEmployees()
     {
         return $this->employees;
+    }
+
+    /**
+     * Get string representation
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->name;
     }
 }

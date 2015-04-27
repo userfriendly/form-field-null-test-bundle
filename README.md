@@ -1,8 +1,9 @@
 # form-field-null-test-bundle
 Test bundle
 
-#### Register bundle in app kernel, add routing, update DB schema
+#### Register bundle in app kernel, add routing & service definitions, update DB schema
 
+app/AppKernel.php
 ```
 public function registerBundles()
 {
@@ -14,12 +15,20 @@ public function registerBundles()
 }
 ```
 
+app/config/routing.yml
 ```
 employee_bundle:
     resource: "@CiscoSystemsFormFieldNullTestBundle/Resources/config/routing.yml"
     prefix:   /employees
 ```
 
+app/config/config.yml
+```
+imports:
+    - { resource: "@CiscoSystemsFormFieldNullTestBundle/Resources/config/services.yml" }
+```
+
+shell
 ```
 php app/console d:s:u --force
 ```

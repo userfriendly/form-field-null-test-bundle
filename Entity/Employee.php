@@ -69,4 +69,14 @@ class Employee
         $this->vendor = $vendor;
         return $this;
     }
+
+    /**
+     * Get string representation
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->name;
+    }
 }
