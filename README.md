@@ -51,5 +51,7 @@ If all works as intended (or rather, as not intended) you should get a message f
 
 The idea here is that I want to be able to create an employee instance *without* a vendor, i.e. the form should allow setting that field to NULL.
 
+Tested on Symfony 2.7.0-BETA1
+
 
 
