@@ -46,6 +46,7 @@ class Employee
 
     /**
      * @param string $name
+     * @return \CiscoSystems\FormFieldNullTestBundle\Entity\Employee
      */
     public function setName( $name )
     {
