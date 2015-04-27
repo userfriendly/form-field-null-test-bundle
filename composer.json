@@ -1,0 +1,23 @@
+{
+    "name": "cisco-systems/form-field-null-test-bundle",
+    "type": "symfony-bundle",
+    "description": "Test bundle",
+    "keywords": ["forms"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moritz Kraft",
+            "email": "mokraft@cisco.com",
+            "homepage": "http://www.cisco.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": ">=2.7"
+    },
+    "autoload": {
+        "psr-0": { "CiscoSystems\\FormFieldNullTestBundle": "" }
+    },
+    "target-dir": "CiscoSystems/FormFieldNullTestBundle"
+}
+
