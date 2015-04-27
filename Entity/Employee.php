@@ -4,6 +4,10 @@ namespace CiscoSystems\FormFieldNullTestBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="employee")
+ */
 class Employee
 {
     /**
@@ -19,7 +23,7 @@ class Employee
     protected $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity="CiscoSystems\EmployeeBundle\Entity\Vendor", inversedBy="employees")
+     * @ORM\ManyToOne(targetEntity="CiscoSystems\FormFieldNullTestBundle\Entity\Vendor", inversedBy="employees")
      * @ORM\JoinColumn(name="vendor_id", referencedColumnName="id", nullable=true)
      */
     protected $vendor;
@@ -50,7 +54,7 @@ class Employee
     }
 
     /**
-     * @return \CiscoSystems\EmployeeBundle\Entity\Vendor
+     * @return \CiscoSystems\FormFieldNullTestBundle\Entity\Vendor
      */
     public function getVendor()
     {
@@ -58,7 +62,7 @@ class Employee
     }
 
     /**
-     * @param \CiscoSystems\EmployeeBundle\Entity\Vendor $vendor
+     * @param \CiscoSystems\FormFieldNullTestBundle\Entity\Vendor $vendor
      */
     public function setVendor( Vendor $vendor = null )
     {

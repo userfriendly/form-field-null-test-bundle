@@ -5,6 +5,10 @@ namespace CiscoSystems\FormFieldNullTestBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="vendor")
+ */
 class Vendor
 {
     /**
@@ -20,7 +24,7 @@ class Vendor
     protected $name;
 
     /**
-     * @ORM\OneToMany(targetEntity="CiscoSystems\EmployeeBundle\Entity\Employee", mappedBy="vendor")
+     * @ORM\OneToMany(targetEntity="CiscoSystems\FormFieldNullTestBundle\Entity\Employee", mappedBy="vendor")
      */
     protected $employees;
 
@@ -42,7 +46,7 @@ class Vendor
 
     /**
      * @param unknown_type $name
-     * @return \CiscoSystems\EmployeeBundle\Entity\Vendor
+     * @return \CiscoSystems\FormFieldNullTestBundle\Entity\Vendor
      */
     public function setName( $name )
     {
