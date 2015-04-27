@@ -51,6 +51,8 @@ If all works as intended (or rather, as not intended) you should get a message f
 
 The idea here is that I want to be able to create an employee instance *without* a vendor, i.e. the form should allow setting that field to NULL.
 
+The mapping explicitly allows the entity property to be nullable, the setter accepts NULL as a parameter, and the form field is configured as `'required' => false`. Is there something more needed to get this working in 2.7?
+
 Tested on Symfony 2.7.0-BETA1
 
 
