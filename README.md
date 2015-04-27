@@ -49,5 +49,7 @@ Add an employee with a vendor. Then add an employee without a vendor.
 
 If all works as intended (or rather, as not intended) you should get a message for the latter, saying "This value is not valid."
 
+The idea here is that I want to be able to create an employee instance *without* a vendor, i.e. the form should allow setting that field to NULL.
+
 
 
