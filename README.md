@@ -1,7 +1,7 @@
 # form-field-null-test-bundle
 Test bundle
 
-#### Register bundle in app kernel, add routing & service definitions, update DB schema
+#### Register bundle in app kernel, add routing & service, update schema
 
 app/AppKernel.php
 ```
